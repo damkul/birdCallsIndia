@@ -1,0 +1,68 @@
+<section class="banner blog-banner">
+  <div class="banner-heading"><h1 class="main-heading">Blogs</h1>
+  <p class="sub-heading">No bird can fly without opening its wings, and no one can love without exposing their hearts. Let your heart expose its love via PEN.</p></div>
+</section>
+<section>
+  <div class="container">
+    <h2>Update Blog</h2>
+    <hr class="new-blog-hr">
+    <div class="new-blog-form-container">
+      <% if (success.length>0) { %>
+        <div class="success">
+          <%= success %>
+        </div>
+      <% } %>
+      <% if (error.length>0) { %>
+        <div class="error">
+          <%= error %>
+        </div>
+      <% } %>
+      
+     
+        <% if(result.blogs.length > 0){ %> 
+            <% result.blogs.forEach(function(blog){ %> 
+                <% 
+                var date = formatDate(blog.date);
+               
+                function formatDate(inputDate){
+                  var date = new Date(inputDate);
+                  mnth = ("0" + (date.getMonth() + 1)).slice(-2),
+                  day = ("0" + date.getDate()).slice(-2);
+                  return [ date.getFullYear(),mnth,day].join("-")
+                  
+              } %>
+                <form action="/blogs/editBlog" method="post" enctype="multipart/form-data">
+                  <input type="hidden" name="blogId" value="<%= blog.blogId %>">
+                    <div class="modal-input-container">
+                      <label for="">Blog Name</label>
+                      <input class="form-input newBlogName" name="blogName" value="<%= blog.blogName %>"></input>
+                    </div>
+                    <div class="new-form-details">
+                      <div class="modal-input-container ">
+                        <label for="">Author</label>
+                        <input type="text" class="form-input newBlogAuthor" name="blogAuthor" value="<%= blog.blogAuthor %> ">
+                    </div>
+                    <div class="modal-input-container ">
+                      <label for="">Date</label>
+                      <input type="Date" class="form-input newBlogDate" name="blogDate" id="date" value="<%= date %>">
+                  </div>
+                    </div>
+                    <div class="modal-input-container ">
+                      <label for="">Blog Content</label>
+                      <textarea name="blogContent" id="" cols="30" rows="20" class="form-input " required><%= blog.blogContent %></textarea>
+                  </div>
+                    <div class="modal-input-container new-blog-file-upload">
+                      <input type="file" name="image" class="form-input" multiple>
+                    </div>
+                    <div class="input-container">
+                      <button type="submit" class="form-input formBtn">Save</button>
+                  </div>
+                  </div>
+                  </form>
+
+            <% }) %> 
+        <% } %>     
+      
+  </div>
+  </div>
+</section>

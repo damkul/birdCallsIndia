@@ -1,0 +1,83 @@
+<section class="banner obs-banner">
+    <div class="banner-heading"><h1 class="main-heading">Dashboard</h1>
+    <p class="sub-heading">  A bird doesn't sing becasuse it has an answer, It sings because it has a Song. Birds teach us greate life lessons. All you have to is listen to their song.</p></div>
+</section>
+<section>
+    <div class="data-container">
+        <div class="event-data">
+            <ul>
+                <li class="header"><h3>Event Registration Count</h3></li>
+                <% if (events.length > 0) { %>
+                    <% events.forEach(element => { %>
+                        <li class="row">
+                            <div class="icon">
+                                <i class="fa-solid fa-e"></i>
+                                
+                            </div>
+                            <span class="name"><%= element.eventName %></span>
+                            <span class="count"><%= element.totalReg %></span> 
+                        </li>
+                    <% }) %>
+                </div>
+                <% } %>
+            </ul>
+        <div class="membership-data">
+            <% var gCount;
+                var sCount;
+                var fCount;
+                var nCount;
+            %>
+            <% if (members.length>0) { %>
+                <% members.forEach(element => { %>
+                    <% switch (element.memType) {
+                        case "General":
+                            gCount= element.countByType
+                            break;
+                        case "Student":
+                            sCount= element.countByType
+                            break;
+                        case "Family":
+                            fCount= element.countByType
+                            break;
+                        case "Nature":
+                            nCount= element.countByType
+                            break;
+                    
+                        default:
+                            break;
+                    } %>
+                <% }) %>
+           <% } %>
+           <div class="header">
+            <h3>Membership Count</h3>
+           </div>
+           <div class="cnt-container">
+                <div class="mem-count">
+                    <div class="dt-cntr">
+                        <i class="fa-solid fa-person"></i><span><%= gCount %></span>
+                    </div>
+                    <p class="text">General</p>
+                </div>
+                <div class="mem-count">
+                    <div class="dt-cntr">
+                        <i class="fa-solid fa-graduation-cap"></i><span><%= sCount %></span>
+                    </div>
+                    <p class="text">Student</p>
+                </div>
+                <div class="mem-count">
+                    <div class="dt-cntr">
+                        <i class="fa-solid fa-people-roof"></i><span><%= fCount %></span>
+                    </div>
+                    <p class="text">Family</p>
+                </div>
+                <div class="mem-count">
+                    <div class="dt-cntr">
+                        <i class="fa-solid fa-tree"></i><span><%= nCount %></span>
+                    </div>
+                    <p class="text">Natures Club</p>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</section>

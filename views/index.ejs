@@ -1,0 +1,156 @@
+<link href="/css/style.css" rel="stylesheet" type="text/css">
+<section class="banner">
+    <div class="banner-heading"><h1 class="main-heading">Discover Birding</h1>
+    <p class="sub-heading">Nature is not a place to visit, it is home.In every walk with nature one receives far more than he seeks.Nature always wears the colors of the spirit.</p></div>
+</section>
+<section id="soundOfBirds">
+    <div class="container">
+        <div class="page-heading-container">
+            <h2 class="page-heading">Lets Explore the SOUND of Birds</h2>
+            <hr class="ruler">
+        </div>
+        <div class="adv-container">
+            <div class="soundContainer">
+                <% if(obsList.length > 0) { %> 
+                    <% obsList.forEach(function(obs){ %>
+                        <% 
+                        if (obs.imageName=='NULL') {
+                            obs.imageName = 'logo_0.5.png';
+                        } 
+                        %>   
+                        <div class="sounds">
+                               <div class="imgCnt">
+                                    <img src="/images/<%= obs.imageName %>" alt="">
+                               </div>
+                               <div class="info">
+                                <h3 class="nameOfBird content-heading"><%= obs.birdName %></h3>
+                                <h4 class="small-gray-text"><%= obs.scientificName %></h4>
+                                <h4 class="small-gray-text"><%= obs.marathiName %></h4>
+                               </div>
+                        </div>
+    
+                     <% }) %>
+                <% } %> 
+    
+                <div class="big-button one">
+                   <a href="/observations">Explore More About Sounds Of Birds</a>
+                </div>
+            </div>
+            <div class="adv-cntr">
+                <h3>Thank you for your valuable contribution</h3>
+                <% if(spnList.length > 0) { %> 
+                    <% spnList.forEach(function(spn){ %>
+                         
+                        <div class="adv">
+                            <img src="/images/<%= spn.imageName %> " alt="">
+                        </div>
+                     <% }) %>
+                <% } %> 
+                <div class="big-button">
+                    <a href="/sponsership">Help Us To Grow Our Work</a>
+                 </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</section>
+<section id="upcomingEvents">
+    <div class="container">
+        <div class="page-heading-container">
+            <h2 class="page-heading">Join Us at our UPCOMING Events</h2>
+            <hr class="ruler">
+        </div>
+        <div class="upcomingEventsContainer">
+            <% if(eventList.length > 0) { %> 
+                <% eventList.forEach(function(event){ %>
+                    <% 
+                    if (event.imageName == 'NULL') {
+                        event.imageName = 'logo_0.5.png';
+                    } 
+                    %>   
+                    <div class="events">
+                        <div class="img-cntr"><img src="/images/Birdsong_logo_0.75x.png" alt=""></div>
+                        <div class="info-cntr"><h3><%= event.eventName %> </h3>
+                        <p><%= event.eventDescription.substr(0,100) %> </p></div>
+                    </div>
+
+                 <% }) %>
+            <% } %> 
+            
+        </div>
+        <div class="big-button">
+            <a href="/events">Explore More About Our Upcoming Events</a>
+        </div>
+       
+    </div>
+</section>
+<section id="blogs">
+    <div class="container">
+        <div class="page-heading-container">
+            <h2 class="page-heading">Read about Birding</h2>
+            <hr class="ruler">
+        </div>
+        <div class="blogsContainer">
+            <% if(blogList.length > 0) { %> 
+                <% blogList.forEach(function(blog){ %>
+                    <% 
+                        if (blog.imageName=='NULL') {
+                            blog.imageName = 'logo_0.5.png';
+                        } 
+                        %> 
+                    <div class="blogs">
+                        <div class="imgDiv">
+                            <img src="/images/thomas-maximilian-lener-ie9zNgph23Y-unsplash.jpg" alt="">
+                        </div>
+                        <div class="info-cntr">
+                            <h3><%= blog.blogName %></h3>
+                            <p class="blog-content-text"><%= blog.blogContent.substr(0,100) %> </p>
+                        </div>
+                    </div>
+
+                 <% }) %>
+            <% } %> 
+        </div>
+        <div class="big-button">
+            <a href="/blogs">Read What Others are Writing</a>
+        </div>
+    </div>
+    
+</section>
+<section id="ongoingProjects">
+    <div class="container">
+        <div class="page-heading-container ongoingProjectText">
+            <h2 class="page-heading">Our Ongoing Projects</h2>
+            <hr class="ruler">
+        </div>
+        <div class="ongoingProjectsContainer">
+            <div class="projectDiv">
+                <% if(projectList.length > 0) { %> 
+                    <% projectList.forEach(function(project){ %>
+                        <% 
+                        if (project.imageName=='NULL') {
+                            project.imageName = 'logo_0.5.png';
+                        } 
+                        %> 
+                        <div class="ongoingProject">
+                            <div class="card">
+                                <div class="img">
+                                    <img src="/images/<%= project.imageName %> " alt="">
+                                </div>
+                                <div class="text">
+                                    <h3><%= project.title %> </h3>
+                                <p><%= project.description.substr(0,80) %> </p>
+                                </div>
+                            </div>
+                        </div>
+    
+                     <% }) %>
+                <% } %> 
+            </div>
+            <div class="big-button">
+                <a href="/projects">Know More About Upcomig Projects</a>
+            </div>
+        </div>
+    </div>
+</section>
