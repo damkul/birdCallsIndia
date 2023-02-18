@@ -37,7 +37,7 @@ router.post('/new',(req,res) => {
     const existingSposerships = getObsData();
     existingSposerships.push(newSponsership);
     saveObsData(existingSposerships);
-    res.redirect('./new')
+    res.redirect('./newSponsership')
 });
 
 module.exports = router;

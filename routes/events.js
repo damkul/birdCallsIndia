@@ -39,7 +39,7 @@ router.get('/newEvent',(req,res) => {
     };
     const existingEvents = getEventData();
     existingEvents.push(event);
-    saveEventData(existingBlogs);
+    saveEventData(existingEvents);
     res.redirect('./writeNewBlog')
 }); 
 
