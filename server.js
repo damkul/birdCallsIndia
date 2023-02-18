@@ -23,6 +23,9 @@ app.set("views", __dirname + "/views");
 app.set("layout", "layouts/layout");
 app.use(expressLayouts);
 
+const homeRoute = require("./routes/index");
+app.use("/", homeRoute);
+
 const blogRoute = require("./routes/blog");
 app.use("/blogs", blogRoute);
 
@@ -36,7 +39,7 @@ const projectRoute = require("./routes/project");
 app.use("/projects", projectRoute);
 
 const sponsershipRoute = require("./routes/sponsership");
-app.use("/sponserships", sponsershipRoute);
+app.use("/sponsership", sponsershipRoute);
 
 const membershipRoute = require("./routes/membership");
 app.use("/memberships", membershipRoute);

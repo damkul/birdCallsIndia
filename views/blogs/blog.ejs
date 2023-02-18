@@ -43,7 +43,13 @@
           <div class="top-blog">
             <h4 class="content-heading"><%= blog.blogName %> </h4>
             <p class="small-gray-text"><%= blog.blogAuthor %> , <%= date %></p>
-            <p class="blog-content-text paragraph"><%= blog.blogContent %> </p>
+           
+            <% if (blog.blogContent.length > 100) { %>
+             <% var desc = blog.blogContent.substr(0,100)  %>
+            <% } %>
+            
+             
+            <p class="blog-content-text paragraph"><%= desc %> </p>
             <audio src="/sounds/<%= blog.soundName %> "></audio>
           </div>
             

@@ -5,15 +5,11 @@
 <section>
     <div class="container">
         <div class="display-blog-container">
-            <% if(result.blogs.length >0){ %> 
-                <% result.blogs.forEach(function(blog){%> 
                     <h2 class="blog-name"><%= blog.blogName %> </h2>
                     <hr>
                     <span class="sub-heading"><%= blog.blogAuthor %>, </span><span class="sub-heading"><%= blog.date %>, </span>
                     <img src="/images/<%= blog.imageName %> " alt="" class="blog-image">
-                    <p class="blogcontent"><%= blog.blogContent %></p> 
-                    <% }) %> 
-            <% } %> 
+                    <p class="blogcontent"><%= blog.blogContent %></p>
         </div>
     </div>
 </section>
