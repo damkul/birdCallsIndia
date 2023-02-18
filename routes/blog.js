@@ -73,7 +73,7 @@ router.get('/writeNewBlog',(req,res) =>{
         updateblog.push(bg)
         //finally save it
         saveUserData(updateblog);
-        res.redirect('/blogs/editblog/'+bg.blogId)
+        res.redirect('/blogs/editBlog/'+bg.blogId)
    });
 
    router.delete('/deleteBlog/:id', (req, res) => {

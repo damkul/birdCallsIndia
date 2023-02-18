@@ -40,7 +40,7 @@ router.get('/newEvent',(req,res) => {
     const existingEvents = getEventData();
     existingEvents.push(event);
     saveEventData(existingEvents);
-    res.redirect('./writeNewBlog')
+    res.redirect('./newEvent')
 }); 
 
 module.exports = router;
