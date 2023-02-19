@@ -43,7 +43,7 @@
                             <img class="evn-img" src="/images/Birdsong_logo_0.75x.png" alt=""></div>
                         <div class="event-body-cntr">
                             <div class="info-cntr">
-                                <h3 class="evn-name"><%= event.eventName %></h3>
+                                <h3 class="evn-name"><a href="<%= event.descLink %>" target="_blank"><%= event.eventName %></h3></a>
                                 <span class="event-text evn-type">Event Type: <%= event.eventType %></span>
                                 <span class="event-text evn-type">Fee: <%= event.eventFee %></span>
                                 <span class="date-format">Date: <%= fromDate %> To <%= toDate %></span>
@@ -60,7 +60,7 @@
                         
                         <div class="register-btn">
                             <!-- <a href="/events/registerForEvent/<%//= //event.eventId +"+"+ event.eventFee %>">Register</a> -->
-                            <a href="<%= event.googleFormLink %>" target="_blank">Register</a>
+                            <a href="<%= event.regLink %>" target="_blank">Register</a>
                         </div>
                     </div>
                     

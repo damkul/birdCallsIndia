@@ -29,7 +29,7 @@
                                 <img src="/images/<%= project.imageName %>" alt="">
                             </div>
                             <div class="info-cntr">
-                                <h3><%= project.title %></h3>
+                                <h3 class="evn-name"><a href="https://docs.google.com/document/d/1jlDvz26G7R20GbEAehg0xe6WrSbtNU0yqaZVQ2Vihdw/edit?usp=share_link" target="_blank"><%= project.projectName %></h3></a>
                                 <% if ( project.description != 'NULL') { %>
 
                                     <% var desc = project.description.substring(0,100); %> 

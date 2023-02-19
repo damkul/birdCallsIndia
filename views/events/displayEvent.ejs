@@ -1,0 +1,17 @@
+<section class="banner event-banner">
+    <div class="banner-heading"><h1 class="main-heading">Events</h1>
+    <p class="sub-heading">Earth and sky, woods and fields, lakes and rivers are excellent schoolmasters and teach us more than we ever learn from books
+        .There is no Wi-Fi in the mountains, but you will find no better connection than this.</p></div>
+</section>
+<section>
+    <div class="container">
+        <div class="display-blog-container">
+                    <h2 class="blog-name"><%= event.eventName %> </h2>
+                    <hr>
+                    <span class="sub-heading">Date:<%= event.fromDate %>, </span> To <span class="sub-heading"><%= event.toDate %>, </span>
+                    <img src="/images/<%= event.imageName %> " alt="" class="blog-image">
+                    <p class="blogcontent"><%= event.description %></p>
+                    <p class="blogcontent"><%= event.instructions %></p>
+        </div>
+    </div>
+</section>

@@ -1,36 +1,36 @@
 [
     {
         "obsId":1,
-        "birdName":"Event 1",
-        "scientificName":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "imageName":"",
-        "soundName":"",
+        "birdName":"Eurasian Hoopoe",
+        "scientificName":"Upupa epops",
+        "soundName":"Hoopoe Euarasian song Tamil naidu Feb 1999.mp3",
+        "imageName":"Hoopoe Exb.JPG",
         "date":"2023-02-23",
         "marathiName":""
     },
     {
         "obsId":2,
-        "birdName":"Event 2",
-        "scientificName":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "imageName":"",
-        "soundName":"",
+        "birdName":"Black-crowned Night Heron",
+        "scientificName":"Nycticorax nycticorax",
+        "soundName":"Heron Night black crowned call Sangli.mp3",
+        "imageName":"Night_heron-VAIJU APHALE004 .jpg",
         "date":"2023-02-23",
         "marathiName":""
     },
     {
         "obsId":3,
-        "birdName":"Event 3",
-        "scientificName":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "imageName":"",
-        "soundName":"",
+        "birdName":"White-browed Bulbul",
+        "scientificName":"Pycnonotus luteolus",
+        "soundName":"Bulbul white browed Goa 5.5.2012.mp3",
+        "imageName":"Bulbul, white browed, Miraj canal.jpg",
         "date":"2023-02-23",
         "marathiName":""
     },
     {
         "obsId":4,
-        "birdName":"Event 4",
-        "scientificName":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "imageName":"",
+        "birdName":"Yellow-wattled Lapwing",
+        "scientificName":"Vanellus malabaricus",
+        "imageName":"Yellow wattled lapwing Exb.jpg",
         "soundName":"",
         "date":"2023-02-23",
         "marathiName":""

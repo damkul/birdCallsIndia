@@ -1,38 +1,50 @@
 [
     {
         "eventId":1,
-        "eventName":"Event 1",
-        "eventDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "eventName":"Birding and Nature watch",
+        "eventDescription":"Arunachal Pradesh itself is a jewel in crown of Indian subcontinent. Nature is still undisturbed and well preserved by tradition and culture.We are conducting one bird watching plus nature watch expedition in Namdafa area with association with local NGO Society for Education and Environment Development.",
         "image":"",
-        "fee":300,
-        "date":"2023-02-23",
-        "eventType":"Seminar"
+        "fee":31000,
+        "fromDate":"2023-03-18",
+        "toDate":"2023-03-23",
+        "eventType":"Seminar",
+        "descLink":"https://docs.google.com/document/d/19AdfcHiJIccCi_crQ0mT6HUUkpaRfWs-6tMOGCIkv7Q/edit?usp=share_link",
+        "regLink":"https://forms.gle/BmoCK9GqaY9JvYip7"
     },
     {
         "eventId":2,
-        "eventName":"Event 2",
-        "eventDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "eventName":"Birding by tiger trail",
+        "eventDescription":"Pench tiger reserve Cillari Gate, Maharashtra Recently I was in Pench Tiger Reserve for bird survey. I have not seen a tiger physically but experienced it every inch I travelled. Pug marks, marking on trees, remaining of tiger kill, alarm calls by Sambar, Langur. Thus I saw tiger every day and every time.Our theme is if tiger is not sighted (people say it is sheer luck) then what. Then every other thing we can experience. Jungle reading with local tribe man, birding, and everything we come across on trail.",
         "image":"",
-        "fee":200,
-        "date":"2023-02-23",
-        "eventType":"Nature Tour"
+        "fee": 11700,
+        "fromDate":"2023-04-07",
+        "toDate":"2023-04-09",
+        "eventType":"Nature Trail",
+        "descLink":"https://docs.google.com/document/d/1hGUiFDNakNlYC78y0801up0kv8CYOMo23MnSon0KNUE/edit?usp=share_link",
+        "regLink":"https://forms.gle/MEXT6583Uvzybg7B9"
     },
     {
         "eventId":3,
-        "eventName":"Event 3",
-        "eventDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "eventName":"Birding and Nature watch",
+        "eventDescription":"Arunachal Pradesh itself is a jewel in crown of Indian subcontinent. Nature is still undisturbed and well preserved by tradition and culture. We are conducting one bird watching plus nature watch expedition in Namdafa Development.",
         "image":"",
-        "fee":600,
-        "date":"2023-02-23",
-        "eventType":"Nature Camp"
+        "fee":12000,
+        "fromDate":"2023-04-18",
+        "toDate":"2023-04-23",
+        "eventType":"Nature Camp",
+        "descLink":"https://docs.google.com/document/d/19AdfcHiJIccCi_crQ0mT6HUUkpaRfWs-6tMOGCIkv7Q/edit?usp=share_link",
+        "regLink":"https://forms.gle/qFi5hEWbnMJeDHU76"
     },
     {
         "eventId":4,
-        "eventName":"Event 4",
-        "eventDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "eventName":"हेग्गाळा देवराई, बेट्टोळी. जिल्हा कुर्ग करनाटक.",
+        "eventDescription":"सविस्तर माहिती लवकरच प्रकाशित केली जाईल तारखा आरक्षित करा.",
         "image":"",
-        "fee":300,
-        "date":"2023-02-23",
-        "eventType":"Seminar"
+        "fee":"",
+        "fromDate":"2023-05-01",
+        "toDate":"2023-05-08",
+        "eventType":"Nature Education Camps.",
+        "descLink":"https://docs.google.com/document/d/1ry3wFFTzmsB-IJ-_ZCt1z9mx3L3sqHJFNyQ2CGeh-xU/edit?usp=share_link",
+        "regLink":"https://forms.gle/qFi5hEWbnMJeDHU76"
     }
 ]
