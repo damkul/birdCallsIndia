@@ -867,7 +867,7 @@ padding-bottom: 1rem;
   color: #fff;
   padding: 0.5rem;
   /* border: 0.2px solid lightgray; */
-  display: block;
+  display: none;
   width: 90%;
   float: right;
   margin-right: 1rem;
