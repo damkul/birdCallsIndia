@@ -41,17 +41,17 @@
 </div>
 <script>
     let type = document.cookie;
-    var logout = document.querySelector('#logout')
-    var login = document.querySelector('#login')
-    logout.style.display = 'none'
-    if (type!='undefined' && type.split('=')[1] >= 0) {
-        login.style.display = 'none'
-        logout.style.display = 'block'
-    }
-    else{
-        logout.style.display = 'none'
-        login.style.display = 'block'
-    }
+    // var logout = document.querySelector('#logout')
+    // var login = document.querySelector('#login')
+    // logout.style.display = 'none'
+    // if (type!='undefined' && type.split('=')[1] >= 0) {
+    //     login.style.display = 'none'
+    //     logout.style.display = 'block'
+    // }
+    // else{
+    //     logout.style.display = 'none'
+    //     login.style.display = 'block'
+    // }
     var hamburger = document.querySelector('.hamburger');
     hamburger.addEventListener('click',function(){
         document.querySelector('body').classList.toggle('active');
