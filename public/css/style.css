@@ -2657,6 +2657,9 @@ padding-bottom: 1rem;
 
 
 /* OBSERVATIONS */
+.obs-sound{
+  width: 50px;
+}
 .search-container{
   width:100%;
   /* background-color: #0c7db1; */

@@ -40,4 +40,24 @@ router.post('/newObservation',(req,res) => {
         res.redirect('./new')
 });
 
+router.post('/observationDetails',(req,res) => {
+
+    var birdName = req.body.q;
+        const obs = getObsData();
+        const findExist = obs.find( ob => ob.obsId === birdName )
+        if (findExist) {
+            res.redirect('/observations/observationDetails/'+results[0].obsId);
+        }
+});
+
+//Get specific observation
+router.get('/observationDetails/:id',(req,res) => {
+    var id = req.params.id;
+    const obs = getObsData();
+    const findExist = obs.find( ob => ob.obsId === id )
+    if (findExist) {
+        res.render('observations/editObservation',{title:"Observations",action:'list',obs:observation,error:'',success:''});
+    }
+});
+
 module.exports = router;
